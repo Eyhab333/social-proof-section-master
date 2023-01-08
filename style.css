@@ -1,0 +1,325 @@
+/* https://zellwk.com/blog/how-to-write-mobile-first-css/ */
+
+/*=========================== mobile =======================================*/
+body {
+  padding: 82px 24px 99px 24px;
+}
+
+.bg-pattern-top-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-pattern-bottom-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.text {
+  margin-bottom: 39px;
+}
+
+.text h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 32px;
+  width: 311px;
+  text-align: center;
+  letter-spacing: -1.42857px;
+  color: #512051;
+}
+
+.text p {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.633333px;
+  width: 317px;
+  color: #927b91;
+}
+
+/*=================== stars =====================*/
+
+.stars {
+  text-align: center;
+  margin-bottom: 49px;
+}
+
+.stars__card {
+  background: #f7f2f7;
+  border-radius: 8px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.one,
+.two {
+  margin-bottom: 16px;
+}
+
+.stars p {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #512051;
+}
+
+.flex-stars {
+  display: flex;
+  justify-content: center;
+  width: 116.55px;
+  align-items: center;
+}
+
+/*=================== cards =====================*/
+.card-one,
+.card-two {
+  margin-bottom: 16px;
+}
+
+.card-three {
+  margin-bottom: 32px;
+}
+
+.card-one,
+.card-two,
+.card-three {
+  background: #512051;
+  border-radius: 8px;
+  padding: 40px 32px 35px 32px;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 23px;
+  max-width: 192px;
+  height: max-content;
+}
+
+.flex img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 23px;
+}
+
+.flex-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-text h2 {
+  font-weight: 700;
+  font-size: 17px;
+  color: #ffffff;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-bottom: 4px;
+}
+
+.flex-text p {
+  font-weight: 400;
+  font-size: 17px;
+  color: #ee69a4;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.cards__p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.303571px;
+  max-width: 253px;
+  color: #ffffff;
+}
+
+@media (max-width: 375px) {
+  .bg-pattern-top-desktop,
+  .bg-pattern-bottom-desktop {
+    visibility: hidden;
+  }
+  body {
+    background: red;
+  }
+}
+
+/*================================ desktop ====================================*/
+
+@media (min-width: 800px) {
+  body {
+    width: 1440px;
+    height: 800px;
+  }
+
+  .top-section {
+    position: absolute;
+    width: 1110px;
+    height: 245px;
+    left: 165px;
+    top: 118px;
+    display: flex;
+  }
+
+  .bg-pattern-top-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .bg-pattern-bottom-desktop {
+    position: absolute;
+    top: 100%;
+    right: -200px;
+  }
+
+  .bg-pattern-top-mobile,
+  .bg-pattern-bottom-mobile {
+    visibility: hidden;
+  }
+  /*================ text ==================*/
+  .text {
+    /* position: absolute; */
+    width: 445px;
+    /* left: 165px;
+    top: 118px; */
+  }
+
+  .text h1,
+  .text p {
+    text-align: left;
+    width: 435px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  .text h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 48px;
+    height: 154px;
+    letter-spacing: -2px;
+    color: #512051;
+    margin-bottom: 16px;
+  }
+
+  /*================= stars ==============*/
+  .stars {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* position: absolute; */
+    /* width: 540px; */
+    /* height: 200px; */
+    /* left: 735px;
+    top: 145px; */
+  }
+
+  .stars__card {
+    background: #f7f2f7;
+    border-radius: 8px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 445px;
+    /* height: 56px; */
+  }
+
+  .stars__card p {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: #512051;
+    margin-left: 32px;
+    padding-top: 0px;
+  }
+
+  .stars__card img {
+    margin-right: 8px;
+  }
+
+  .one,
+  .two,
+  .three {
+    width: 445px;
+    /* height: 56px; */
+  }
+
+  .one {
+    justify-self: start;
+  }
+
+  .two {
+    align-self: center;
+    margin-top: 16px;
+  }
+
+  .three {
+    align-self: end;
+    margin-top: 16px;
+  }
+
+  /*================ cards ===============*/
+  .cards {
+    position: absolute;
+    /* width: 1110px; */
+    height: 266px;
+    left: 165px;
+    top: 534px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    width: 350px;
+    height: 234px;
+    /* padding: 40px 32px 35px 32px; */
+  }
+
+  .cards__p {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    /* or 129% */
+
+    letter-spacing: -0.303571px;
+    border: 2px solid red;
+    color: #ffffff;
+    /* width: 390px; */
+    height: 188px;
+  }
+
+  .card-one {
+    margin-right: 30px;
+    align-self: end;
+  }
+
+  .card-two {
+    margin-right: 30px;
+    align-self: center;
+  }
+
+  .card-three {
+    align-self: start;
+  }
+}
