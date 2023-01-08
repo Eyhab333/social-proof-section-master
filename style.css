@@ -148,12 +148,11 @@ body {
 }
 
 @media (max-width: 375px) {
-  .bg-pattern-top-desktop,
+  /* .bg-pattern-top-desktop,
   .bg-pattern-bottom-desktop {
     visibility: hidden;
-  }
+  } */
   body {
-    background: red;
   }
 }
 
@@ -163,6 +162,9 @@ body {
   body {
     width: 1440px;
     height: 800px;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top , right bottom;
   }
 
   .top-section {
@@ -174,22 +176,6 @@ body {
     display: flex;
   }
 
-  .bg-pattern-top-desktop {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .bg-pattern-bottom-desktop {
-    position: absolute;
-    top: 100%;
-    right: -200px;
-  }
-
-  .bg-pattern-top-mobile,
-  .bg-pattern-bottom-mobile {
-    visibility: hidden;
-  }
   /*================ text ==================*/
   .text {
     width: 445px;
