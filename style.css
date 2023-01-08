@@ -148,11 +148,11 @@ body {
 }
 
 @media (max-width: 375px) {
-  /* .bg-pattern-top-desktop,
-  .bg-pattern-bottom-desktop {
-    visibility: hidden;
-  } */
   body {
+      background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: left top , right bottom;
+    
   }
 }
 
