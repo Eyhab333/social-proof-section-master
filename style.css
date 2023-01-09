@@ -180,6 +180,7 @@ body {
   /*================ text ==================*/
   .text {
     width: 445px;
+    margin-right: 125px;
   }
 
   .text h1,
@@ -191,7 +192,7 @@ body {
   }
 
   .text h1 {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 56px;
     line-height: 48px;
     height: 154px;
@@ -257,7 +258,7 @@ body {
     width: 1110px;
     height: 266px;
     left: 165px;
-    top: 480px;
+    top: 460px;
     display: flex;
   }
 
